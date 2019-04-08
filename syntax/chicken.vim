@@ -16,6 +16,7 @@ syn keyword schemeFunction compose
 syn keyword schemeFunction cut
 syn keyword schemeFunction cute
 syn keyword schemeFunction sub1
+syn keyword schemeFunction rassoc
 "FIXME: void is also a foreign type
 "syn keyword schemeFunction void
 
@@ -44,8 +45,17 @@ syn keyword schemeTypeSyntax size_t
 syn keyword schemeTypeSyntax unsigned-int
 syn keyword schemeTypeSyntax unsigned-long
 
+"(chicken format)
+syn keyword schemeFunction sprintf
+
+"(chicken io)
+syn keyword schemeFunction write-line
+
 "(chicken port)
 syn keyword schemeFunction make-bidirectional-port
+
+"(chicken tcp)
+syn keyword schemeFunction tcp-connect
 
 "srfi-1
 syn keyword schemeFunction first
